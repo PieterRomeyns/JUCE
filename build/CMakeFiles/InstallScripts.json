@@ -1,0 +1,14 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Engine/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Effects/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Instruments/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Model/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/UI/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

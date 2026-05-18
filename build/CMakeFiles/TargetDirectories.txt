@@ -1,0 +1,16 @@
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/edit_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/rebuild_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/CMakeFiles/edit_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/CMakeFiles/rebuild_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Engine/CMakeFiles/edit_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Engine/CMakeFiles/rebuild_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Effects/CMakeFiles/edit_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Effects/CMakeFiles/rebuild_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Instruments/CMakeFiles/edit_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Instruments/CMakeFiles/rebuild_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Model/CMakeFiles/edit_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Model/CMakeFiles/rebuild_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/UI/CMakeFiles/edit_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/UI/CMakeFiles/rebuild_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/tests/CMakeFiles/edit_cache.dir
+/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/tests/CMakeFiles/rebuild_cache.dir

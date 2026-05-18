@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/CMakeFiles/juce_frameworks-populate"
+		},
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/CMakeFiles/juce_frameworks-populate.rule"
+		},
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/CMakeFiles/juce_frameworks-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/juce_frameworks-populate-prefix/src/juce_frameworks-populate-stamp/juce_frameworks-populate-build.rule"
+		},
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/juce_frameworks-populate-prefix/src/juce_frameworks-populate-stamp/juce_frameworks-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/juce_frameworks-populate-prefix/src/juce_frameworks-populate-stamp/juce_frameworks-populate-download.rule"
+		},
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/juce_frameworks-populate-prefix/src/juce_frameworks-populate-stamp/juce_frameworks-populate-install.rule"
+		},
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/juce_frameworks-populate-prefix/src/juce_frameworks-populate-stamp/juce_frameworks-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/juce_frameworks-populate-prefix/src/juce_frameworks-populate-stamp/juce_frameworks-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/juce_frameworks-populate-prefix/src/juce_frameworks-populate-stamp/juce_frameworks-populate-test.rule"
+		},
+		{
+			"file" : "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/juce_frameworks-populate-prefix/src/juce_frameworks-populate-stamp/juce_frameworks-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"juce_frameworks-populate"
+		],
+		"name" : "juce_frameworks-populate"
+	}
+}
