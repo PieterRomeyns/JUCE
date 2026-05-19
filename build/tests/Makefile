@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/bui
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/opt/homebrew/bin/ctest $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -84,6 +94,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -113,8 +168,479 @@ preinstall/fast:
 
 # clear depends
 depend:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(CMAKE_COMMAND) -P /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/VerifyGlobs.cmake
 	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+tests/CMakeFiles/DelayFXTest.dir/rule:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/DelayFXTest.dir/rule
+.PHONY : tests/CMakeFiles/DelayFXTest.dir/rule
+
+# Convenience name for target.
+DelayFXTest: tests/CMakeFiles/DelayFXTest.dir/rule
+.PHONY : DelayFXTest
+
+# fast build rule for target.
+DelayFXTest/fast:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/build
+.PHONY : DelayFXTest/fast
+
+DelayFXTest.o: DelayFXTest.cpp.o
+.PHONY : DelayFXTest.o
+
+# target to build an object file
+DelayFXTest.cpp.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/DelayFXTest.cpp.o
+.PHONY : DelayFXTest.cpp.o
+
+DelayFXTest.i: DelayFXTest.cpp.i
+.PHONY : DelayFXTest.i
+
+# target to preprocess a source file
+DelayFXTest.cpp.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/DelayFXTest.cpp.i
+.PHONY : DelayFXTest.cpp.i
+
+DelayFXTest.s: DelayFXTest.cpp.s
+.PHONY : DelayFXTest.s
+
+# target to generate assembly for a file
+DelayFXTest.cpp.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/DelayFXTest.cpp.s
+.PHONY : DelayFXTest.cpp.s
+
+__/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.o: __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.o
+
+__/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.i: __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.i
+
+__/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.s: __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.s
+
+__/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.o: __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.o
+
+__/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.i: __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.i
+
+__/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.s: __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.s
+
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.o: __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
+
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.i: __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i
+
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.s: __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s
+
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.o: __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.i: __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i
+
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.s: __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s
+
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.o: __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.i: __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i
+
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.s: __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s
+
+__/_deps/juce-submodule/modules/juce_core/juce_core.o: __/_deps/juce-submodule/modules/juce_core/juce_core.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_core/juce_core.mm.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_core/juce_core.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core.mm.o
+
+__/_deps/juce-submodule/modules/juce_core/juce_core.i: __/_deps/juce-submodule/modules/juce_core/juce_core.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_core/juce_core.mm.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_core/juce_core.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core.mm.i
+
+__/_deps/juce-submodule/modules/juce_core/juce_core.s: __/_deps/juce-submodule/modules/juce_core/juce_core.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_core/juce_core.mm.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_core/juce_core.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core.mm.s
+
+__/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.o: __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.o
+
+__/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.i: __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.i
+
+__/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.s: __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.s
+
+__/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.o: __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.o
+
+__/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.i: __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.i
+
+__/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.s: __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.s
+
+__/_deps/juce-submodule/modules/juce_events/juce_events.o: __/_deps/juce-submodule/modules/juce_events/juce_events.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_events/juce_events.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_events/juce_events.mm.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_events/juce_events.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_events/juce_events.mm.o
+
+__/_deps/juce-submodule/modules/juce_events/juce_events.i: __/_deps/juce-submodule/modules/juce_events/juce_events.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_events/juce_events.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_events/juce_events.mm.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_events/juce_events.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_events/juce_events.mm.i
+
+__/_deps/juce-submodule/modules/juce_events/juce_events.s: __/_deps/juce-submodule/modules/juce_events/juce_events.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_events/juce_events.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_events/juce_events.mm.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_events/juce_events.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_events/juce_events.mm.s
+
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics.o: __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.o
+
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics.i: __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.i
+
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics.s: __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.s
+
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.o: __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.i: __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
+
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.s: __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
+
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.o: __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.i: __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
+
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.s: __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
+.PHONY : __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.o: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.o
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.i: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.i
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.s: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.s
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.o: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.o
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.i: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.i
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.s: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.s
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.o: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.o
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.i: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.i
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.s: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.s
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.o: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.o
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.i: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.i
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.s: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.s
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.o: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.o
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.i: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.i
+
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.s: __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.s
+
+__/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.o: __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.o
+
+# target to build an object file
+__/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.o:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.o
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.o
+
+__/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.i: __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.i
+
+# target to preprocess a source file
+__/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.i:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.i
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.i
+
+__/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.s: __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.s
+
+# target to generate assembly for a file
+__/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.s:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/__/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.s
+.PHONY : __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.s
 
 # Help Target
 help:
@@ -123,7 +649,70 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... DelayFXTest"
+	@echo "... DelayFXTest.o"
+	@echo "... DelayFXTest.i"
+	@echo "... DelayFXTest.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_core/juce_core.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_core/juce_core.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_core/juce_core.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_events/juce_events.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_events/juce_events.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_events/juce_events.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_graphics/juce_graphics.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.s"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.o"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.i"
+	@echo "... __/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.s"
 .PHONY : help
 
 
@@ -135,6 +724,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(CMAKE_COMMAND) -P /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/VerifyGlobs.cmake
 	cd /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

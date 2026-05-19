@@ -30,6 +30,7 @@ As an agent you MUST NOT:
 - Delete any file or folder inside `.tiny-ai/`
 - Modify an existing `.tiny-ai/` file unless the user explicitly asks you to update it
 - Move files out of `.tiny-ai/`
+- push code to any Other repository than the 
 
 If the user asks you to delete or reorganise `.tiny-ai/` contents, that is fine — act on their explicit instruction. Never do it on your own initiative.
 

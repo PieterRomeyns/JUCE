@@ -1,3 +1,0 @@
-/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/CMakeFiles/juce_frameworks-populate.dir
-/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/CMakeFiles/edit_cache.dir
-/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/CMakeFiles/rebuild_cache.dir

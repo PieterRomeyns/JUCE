@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/bui
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/opt/homebrew/bin/ctest $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -84,6 +94,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -113,8 +168,528 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named MyDAW
+
+# Build rule for target.
+MyDAW: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyDAW
+.PHONY : MyDAW
+
+# fast build rule for target.
+MyDAW/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/build
+.PHONY : MyDAW/fast
+
+#=============================================================================
+# Target rules for targets named Effects
+
+# Build rule for target.
+Effects: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Effects
+.PHONY : Effects
+
+# fast build rule for target.
+Effects/fast:
+	$(MAKE) $(MAKESILENT) -f Source/Effects/CMakeFiles/Effects.dir/build.make Source/Effects/CMakeFiles/Effects.dir/build
+.PHONY : Effects/fast
+
+#=============================================================================
+# Target rules for targets named DelayFXTest
+
+# Build rule for target.
+DelayFXTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DelayFXTest
+.PHONY : DelayFXTest
+
+# fast build rule for target.
+DelayFXTest/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/build
+.PHONY : DelayFXTest/fast
+
+Source/Main.o: Source/Main.cpp.o
+.PHONY : Source/Main.o
+
+# target to build an object file
+Source/Main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/Source/Main.cpp.o
+.PHONY : Source/Main.cpp.o
+
+Source/Main.i: Source/Main.cpp.i
+.PHONY : Source/Main.i
+
+# target to preprocess a source file
+Source/Main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/Source/Main.cpp.i
+.PHONY : Source/Main.cpp.i
+
+Source/Main.s: Source/Main.cpp.s
+.PHONY : Source/Main.s
+
+# target to generate assembly for a file
+Source/Main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/Source/Main.cpp.s
+.PHONY : Source/Main.cpp.s
+
+Source/UI/MainWindow.o: Source/UI/MainWindow.cpp.o
+.PHONY : Source/UI/MainWindow.o
+
+# target to build an object file
+Source/UI/MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/Source/UI/MainWindow.cpp.o
+.PHONY : Source/UI/MainWindow.cpp.o
+
+Source/UI/MainWindow.i: Source/UI/MainWindow.cpp.i
+.PHONY : Source/UI/MainWindow.i
+
+# target to preprocess a source file
+Source/UI/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/Source/UI/MainWindow.cpp.i
+.PHONY : Source/UI/MainWindow.cpp.i
+
+Source/UI/MainWindow.s: Source/UI/MainWindow.cpp.s
+.PHONY : Source/UI/MainWindow.s
+
+# target to generate assembly for a file
+Source/UI/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/Source/UI/MainWindow.cpp.s
+.PHONY : Source/UI/MainWindow.cpp.s
+
+_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.o: _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.o
+
+_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.i: _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.i
+
+_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.s: _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.mm.s
+
+_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.o: _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.o
+
+_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.i: _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.i
+
+_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.s: _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.mm.s
+
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.o: _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
+
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.i: _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i
+
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.s: _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.s
+
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.o: _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.i: _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i
+
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.s: _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.s
+
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.o: _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.i: _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i
+
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.s: _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.s
+
+_deps/juce-submodule/modules/juce_core/juce_core.o: _deps/juce-submodule/modules/juce_core/juce_core.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_core/juce_core.mm.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_core/juce_core.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core.mm.o
+
+_deps/juce-submodule/modules/juce_core/juce_core.i: _deps/juce-submodule/modules/juce_core/juce_core.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_core/juce_core.mm.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_core/juce_core.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core.mm.i
+
+_deps/juce-submodule/modules/juce_core/juce_core.s: _deps/juce-submodule/modules/juce_core/juce_core.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_core/juce_core.mm.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_core/juce_core.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core.mm.s
+
+_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.o: _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.o
+
+_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.i: _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.i
+
+_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.s: _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.cpp.s
+
+_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.o: _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.o
+
+_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.i: _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.i
+
+_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.s: _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.mm.s
+
+_deps/juce-submodule/modules/juce_events/juce_events.o: _deps/juce-submodule/modules/juce_events/juce_events.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_events/juce_events.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_events/juce_events.mm.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_events/juce_events.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_events/juce_events.mm.o
+
+_deps/juce-submodule/modules/juce_events/juce_events.i: _deps/juce-submodule/modules/juce_events/juce_events.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_events/juce_events.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_events/juce_events.mm.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_events/juce_events.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_events/juce_events.mm.i
+
+_deps/juce-submodule/modules/juce_events/juce_events.s: _deps/juce-submodule/modules/juce_events/juce_events.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_events/juce_events.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_events/juce_events.mm.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_events/juce_events.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_events/juce_events.mm.s
+
+_deps/juce-submodule/modules/juce_graphics/juce_graphics.o: _deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.o
+
+_deps/juce-submodule/modules/juce_graphics/juce_graphics.i: _deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.i
+
+_deps/juce-submodule/modules/juce_graphics/juce_graphics.s: _deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics.mm.s
+
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.o: _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.i: _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
+
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.s: _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
+
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.o: _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.i: _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
+
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.s: _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
+.PHONY : _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.o: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.o
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.i: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.i
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.s: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.mm.s
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.o: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.o
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.i: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.i
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.s: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.cpp.s
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.o: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.o
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.i: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.i
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.s: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.cpp.s
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.o: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.o
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.i: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.i
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.s: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.cpp.s
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.o: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.o
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.i: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.i
+
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.s: _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.cpp.s
+
+_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.o: _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.o
+
+# target to build an object file
+_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.o
+.PHONY : _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.o
+
+_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.i: _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.i
+
+# target to preprocess a source file
+_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.i
+.PHONY : _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.i
+
+_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.s: _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.s
+
+# target to generate assembly for a file
+_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/_deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.s
+.PHONY : _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.mm.s
 
 # Help Target
 help:
@@ -123,7 +698,75 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... DelayFXTest"
+	@echo "... Effects"
+	@echo "... MyDAW"
+	@echo "... Source/Main.o"
+	@echo "... Source/Main.i"
+	@echo "... Source/Main.s"
+	@echo "... Source/UI/MainWindow.o"
+	@echo "... Source/UI/MainWindow.i"
+	@echo "... Source/UI/MainWindow.s"
+	@echo "... _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.o"
+	@echo "... _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.i"
+	@echo "... _deps/juce-submodule/modules/juce_audio_basics/juce_audio_basics.s"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.o"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.i"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors/juce_audio_processors.s"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.o"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.i"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless.s"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.o"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.i"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.s"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.o"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.i"
+	@echo "... _deps/juce-submodule/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.s"
+	@echo "... _deps/juce-submodule/modules/juce_core/juce_core.o"
+	@echo "... _deps/juce-submodule/modules/juce_core/juce_core.i"
+	@echo "... _deps/juce-submodule/modules/juce_core/juce_core.s"
+	@echo "... _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.o"
+	@echo "... _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.i"
+	@echo "... _deps/juce-submodule/modules/juce_core/juce_core_CompilationTime.s"
+	@echo "... _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.o"
+	@echo "... _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.i"
+	@echo "... _deps/juce-submodule/modules/juce_data_structures/juce_data_structures.s"
+	@echo "... _deps/juce-submodule/modules/juce_events/juce_events.o"
+	@echo "... _deps/juce-submodule/modules/juce_events/juce_events.i"
+	@echo "... _deps/juce-submodule/modules/juce_events/juce_events.s"
+	@echo "... _deps/juce-submodule/modules/juce_graphics/juce_graphics.o"
+	@echo "... _deps/juce-submodule/modules/juce_graphics/juce_graphics.i"
+	@echo "... _deps/juce-submodule/modules/juce_graphics/juce_graphics.s"
+	@echo "... _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.o"
+	@echo "... _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.i"
+	@echo "... _deps/juce-submodule/modules/juce_graphics/juce_graphics_Harfbuzz.s"
+	@echo "... _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.o"
+	@echo "... _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.i"
+	@echo "... _deps/juce-submodule/modules/juce_graphics/juce_graphics_Sheenbidi.s"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.o"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.i"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics.s"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.o"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.i"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_2.s"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.o"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.i"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_3.s"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.o"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.i"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_4.s"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.o"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.i"
+	@echo "... _deps/juce-submodule/modules/juce_gui_basics/juce_gui_basics_5.s"
+	@echo "... _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.o"
+	@echo "... _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.i"
+	@echo "... _deps/juce-submodule/modules/juce_gui_extra/juce_gui_extra.s"
 .PHONY : help
 
 
@@ -135,6 +778,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

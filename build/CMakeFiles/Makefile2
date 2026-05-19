@@ -63,21 +63,28 @@ CMAKE_BINARY_DIR = /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/bui
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/MyDAW.dir/all
+all: _deps/juce-submodule/all
 all: Source/all
 all: tests/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/MyDAW.dir/codegen
+codegen: _deps/juce-submodule/codegen
 codegen: Source/codegen
 codegen: tests/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
+preinstall: _deps/juce-submodule/preinstall
 preinstall: Source/preinstall
 preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/MyDAW.dir/clean
+clean: _deps/juce-submodule/clean
 clean: Source/clean
 clean: tests/clean
 .PHONY : clean
@@ -121,11 +128,11 @@ Source/clean: Source/UI/clean
 # Directory level rules for directory Source/Effects
 
 # Recursive "all" directory target.
-Source/Effects/all:
+Source/Effects/all: Source/Effects/CMakeFiles/Effects.dir/all
 .PHONY : Source/Effects/all
 
 # Recursive "codegen" directory target.
-Source/Effects/codegen:
+Source/Effects/codegen: Source/Effects/CMakeFiles/Effects.dir/codegen
 .PHONY : Source/Effects/codegen
 
 # Recursive "preinstall" directory target.
@@ -133,7 +140,7 @@ Source/Effects/preinstall:
 .PHONY : Source/Effects/preinstall
 
 # Recursive "clean" directory target.
-Source/Effects/clean:
+Source/Effects/clean: Source/Effects/CMakeFiles/Effects.dir/clean
 .PHONY : Source/Effects/clean
 
 #=============================================================================
@@ -213,14 +220,94 @@ Source/UI/clean:
 .PHONY : Source/UI/clean
 
 #=============================================================================
+# Directory level rules for directory _deps/juce-submodule
+
+# Recursive "all" directory target.
+_deps/juce-submodule/all: _deps/juce-submodule/modules/all
+_deps/juce-submodule/all: _deps/juce-submodule/extras/Build/all
+.PHONY : _deps/juce-submodule/all
+
+# Recursive "codegen" directory target.
+_deps/juce-submodule/codegen: _deps/juce-submodule/modules/codegen
+_deps/juce-submodule/codegen: _deps/juce-submodule/extras/Build/codegen
+.PHONY : _deps/juce-submodule/codegen
+
+# Recursive "preinstall" directory target.
+_deps/juce-submodule/preinstall: _deps/juce-submodule/modules/preinstall
+_deps/juce-submodule/preinstall: _deps/juce-submodule/extras/Build/preinstall
+.PHONY : _deps/juce-submodule/preinstall
+
+# Recursive "clean" directory target.
+_deps/juce-submodule/clean: _deps/juce-submodule/modules/clean
+_deps/juce-submodule/clean: _deps/juce-submodule/extras/Build/clean
+.PHONY : _deps/juce-submodule/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/juce-submodule/extras/Build
+
+# Recursive "all" directory target.
+_deps/juce-submodule/extras/Build/all: _deps/juce-submodule/extras/Build/juceaide/all
+.PHONY : _deps/juce-submodule/extras/Build/all
+
+# Recursive "codegen" directory target.
+_deps/juce-submodule/extras/Build/codegen: _deps/juce-submodule/extras/Build/juceaide/codegen
+.PHONY : _deps/juce-submodule/extras/Build/codegen
+
+# Recursive "preinstall" directory target.
+_deps/juce-submodule/extras/Build/preinstall: _deps/juce-submodule/extras/Build/juceaide/preinstall
+.PHONY : _deps/juce-submodule/extras/Build/preinstall
+
+# Recursive "clean" directory target.
+_deps/juce-submodule/extras/Build/clean: _deps/juce-submodule/extras/Build/juceaide/clean
+.PHONY : _deps/juce-submodule/extras/Build/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/juce-submodule/extras/Build/juceaide
+
+# Recursive "all" directory target.
+_deps/juce-submodule/extras/Build/juceaide/all:
+.PHONY : _deps/juce-submodule/extras/Build/juceaide/all
+
+# Recursive "codegen" directory target.
+_deps/juce-submodule/extras/Build/juceaide/codegen:
+.PHONY : _deps/juce-submodule/extras/Build/juceaide/codegen
+
+# Recursive "preinstall" directory target.
+_deps/juce-submodule/extras/Build/juceaide/preinstall:
+.PHONY : _deps/juce-submodule/extras/Build/juceaide/preinstall
+
+# Recursive "clean" directory target.
+_deps/juce-submodule/extras/Build/juceaide/clean:
+.PHONY : _deps/juce-submodule/extras/Build/juceaide/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/juce-submodule/modules
+
+# Recursive "all" directory target.
+_deps/juce-submodule/modules/all:
+.PHONY : _deps/juce-submodule/modules/all
+
+# Recursive "codegen" directory target.
+_deps/juce-submodule/modules/codegen:
+.PHONY : _deps/juce-submodule/modules/codegen
+
+# Recursive "preinstall" directory target.
+_deps/juce-submodule/modules/preinstall:
+.PHONY : _deps/juce-submodule/modules/preinstall
+
+# Recursive "clean" directory target.
+_deps/juce-submodule/modules/clean:
+.PHONY : _deps/juce-submodule/modules/clean
+
+#=============================================================================
 # Directory level rules for directory tests
 
 # Recursive "all" directory target.
-tests/all:
+tests/all: tests/CMakeFiles/DelayFXTest.dir/all
 .PHONY : tests/all
 
 # Recursive "codegen" directory target.
-tests/codegen:
+tests/codegen: tests/CMakeFiles/DelayFXTest.dir/codegen
 .PHONY : tests/codegen
 
 # Recursive "preinstall" directory target.
@@ -228,8 +315,104 @@ tests/preinstall:
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
-tests/clean:
+tests/clean: tests/CMakeFiles/DelayFXTest.dir/clean
 .PHONY : tests/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MyDAW.dir
+
+# All Build rule for target.
+CMakeFiles/MyDAW.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63 "Built target MyDAW"
+.PHONY : CMakeFiles/MyDAW.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MyDAW.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles 23
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyDAW.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles 0
+.PHONY : CMakeFiles/MyDAW.dir/rule
+
+# Convenience name for target.
+MyDAW: CMakeFiles/MyDAW.dir/rule
+.PHONY : MyDAW
+
+# codegen rule for target.
+CMakeFiles/MyDAW.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63 "Finished codegen for target MyDAW"
+.PHONY : CMakeFiles/MyDAW.dir/codegen
+
+# clean rule for target.
+CMakeFiles/MyDAW.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDAW.dir/build.make CMakeFiles/MyDAW.dir/clean
+.PHONY : CMakeFiles/MyDAW.dir/clean
+
+#=============================================================================
+# Target rules for target Source/Effects/CMakeFiles/Effects.dir
+
+# All Build rule for target.
+Source/Effects/CMakeFiles/Effects.dir/all:
+	$(MAKE) $(MAKESILENT) -f Source/Effects/CMakeFiles/Effects.dir/build.make Source/Effects/CMakeFiles/Effects.dir/depend
+	$(MAKE) $(MAKESILENT) -f Source/Effects/CMakeFiles/Effects.dir/build.make Source/Effects/CMakeFiles/Effects.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target Effects"
+.PHONY : Source/Effects/CMakeFiles/Effects.dir/all
+
+# Build rule for subdir invocation for target.
+Source/Effects/CMakeFiles/Effects.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles 20
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Source/Effects/CMakeFiles/Effects.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles 0
+.PHONY : Source/Effects/CMakeFiles/Effects.dir/rule
+
+# Convenience name for target.
+Effects: Source/Effects/CMakeFiles/Effects.dir/rule
+.PHONY : Effects
+
+# codegen rule for target.
+Source/Effects/CMakeFiles/Effects.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Source/Effects/CMakeFiles/Effects.dir/build.make Source/Effects/CMakeFiles/Effects.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Finished codegen for target Effects"
+.PHONY : Source/Effects/CMakeFiles/Effects.dir/codegen
+
+# clean rule for target.
+Source/Effects/CMakeFiles/Effects.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Source/Effects/CMakeFiles/Effects.dir/build.make Source/Effects/CMakeFiles/Effects.dir/clean
+.PHONY : Source/Effects/CMakeFiles/Effects.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/DelayFXTest.dir
+
+# All Build rule for target.
+tests/CMakeFiles/DelayFXTest.dir/all: Source/Effects/CMakeFiles/Effects.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target DelayFXTest"
+.PHONY : tests/CMakeFiles/DelayFXTest.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/DelayFXTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles 40
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/DelayFXTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/DelayFXTest.dir/rule
+
+# Convenience name for target.
+DelayFXTest: tests/CMakeFiles/DelayFXTest.dir/rule
+.PHONY : DelayFXTest
+
+# codegen rule for target.
+tests/CMakeFiles/DelayFXTest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Finished codegen for target DelayFXTest"
+.PHONY : tests/CMakeFiles/DelayFXTest.dir/codegen
+
+# clean rule for target.
+tests/CMakeFiles/DelayFXTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/DelayFXTest.dir/build.make tests/CMakeFiles/DelayFXTest.dir/clean
+.PHONY : tests/CMakeFiles/DelayFXTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
@@ -238,6 +421,7 @@ tests/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -252,29 +252,6 @@ Engine_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 Engine_SOURCE_DIR:STATIC=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/Source/Engine
 
-//Directory under which to collect all populated content
-FETCHCONTENT_BASE_DIR:PATH=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps
-
-//Disables all attempts to download or update content and assumes
-// source dirs already exist
-FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
-
-//Enables QUIET option for all content population
-FETCHCONTENT_QUIET:BOOL=ON
-
-//When not empty, overrides where to find pre-populated content
-// for juce_frameworks
-FETCHCONTENT_SOURCE_DIR_JUCE_FRAMEWORKS:PATH=
-
-//Enables UPDATE_DISCONNECTED behavior for all content population
-FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of juce_frameworks
-FETCHCONTENT_UPDATES_DISCONNECTED_JUCE_FRAMEWORKS:BOOL=OFF
-
-//Git command line client
-GIT_EXECUTABLE:FILEPATH=/usr/bin/git
-
 //Value Computed by CMake
 Instruments_BINARY_DIR:STATIC=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Instruments
 
@@ -284,8 +261,42 @@ Instruments_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 Instruments_SOURCE_DIR:STATIC=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/Source/Instruments
 
-//No help, variable specified on the command line.
-JUCE_DIR:UNINITIALIZED=/juce-submodule/JUCE
+//Value Computed by CMake
+JUCE_BINARY_DIR:STATIC=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce-submodule
+
+//Add build targets for the DemoRunner and PIPs
+JUCE_BUILD_EXAMPLES:BOOL=OFF
+
+//Add build targets for the Projucer and other tools
+JUCE_BUILD_EXTRAS:BOOL=OFF
+
+//Whether or not plugins should be installed to the system after
+// building
+JUCE_COPY_PLUGIN_AFTER_BUILD:BOOL=OFF
+
+//Show all module sources in IDE projects
+JUCE_ENABLE_MODULE_SOURCE_GROUPS:BOOL=OFF
+
+//The location, relative to the install prefix, where the JUCE
+// config file will be installed
+JUCE_INSTALL_DESTINATION:STRING=lib/cmake/JUCE-8.0.12
+
+//Value Computed by CMake
+JUCE_IS_TOP_LEVEL:STATIC=OFF
+
+//Only configure the JUCE modules
+JUCE_MODULES_ONLY:BOOL=OFF
+
+//Value Computed by CMake
+JUCE_SOURCE_DIR:STATIC=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule
+
+//The location, relative to the install prefix, where juceaide
+// will be installed
+JUCE_TOOL_INSTALL_DIR:STRING=bin/JUCE-8.0.12
+
+//Location that overrides the default directory where our FindWebView2
+// script is looking for the *Microsoft.Web.WebView2* directory
+JUCE_WEBVIEW2_PACKAGE_LOCATION:BOOL=OFF
 
 //Value Computed by CMake
 Model_BINARY_DIR:STATIC=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Model
@@ -433,7 +444,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -478,6 +489,10 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GIT_EXECUTABLE
-GIT_EXECUTABLE-ADVANCED:INTERNAL=1
+//The path to the folder holding this file and other resources
+JUCE_CMAKE_UTILS_DIR:INTERNAL=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/extras/Build/CMake
+//The name of the juceaide program
+JUCE_JUCEAIDE_NAME:INTERNAL=juceaide
+//The path to JUCE modules
+JUCE_MODULES_DIR:INTERNAL=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/modules
 

@@ -14,16 +14,32 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/Source/Instruments/CMakeLists.txt"
   "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/Source/Model/CMakeLists.txt"
   "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/Source/UI/CMakeLists.txt"
+  "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/CMakeLists.txt"
+  "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/extras/Build/CMake/JUCECheckAtomic.cmake"
+  "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/extras/Build/CMake/JUCEConfig.cmake.in"
+  "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/extras/Build/CMake/JUCEHelperTargets.cmake"
+  "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/extras/Build/CMake/JUCEModuleSupport.cmake"
+  "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/extras/Build/CMake/JUCEUtils.cmake"
+  "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/extras/Build/CMakeLists.txt"
+  "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/extras/Build/juceaide/CMakeLists.txt"
+  "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/_deps/juce-submodule/modules/CMakeLists.txt"
   "CMakeFiles/4.3.2/CMakeCCompiler.cmake"
   "CMakeFiles/4.3.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.3.2/CMakeSystem.cmake"
+  "CMakeFiles/VerifyGlobs.cmake"
+  "CMakeFiles/cmake.verify_globs"
+  "MyDAW_artefacts/JuceLibraryCode/MyDAW/Info.plist"
+  "_deps/juce-submodule/tools/JUCEToolsExport.cmake"
   "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/tests/CMakeLists.txt"
+  "/opt/homebrew/share/cmake/Modules/BasicConfigVersion-ExactVersion.cmake.in"
   "/opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
+  "/opt/homebrew/share/cmake/Modules/CMakeDependentOption.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake"
+  "/opt/homebrew/share/cmake/Modules/CMakePackageConfigHelpers.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-C.cmake"
@@ -48,6 +64,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake"
+  "/opt/homebrew/share/cmake/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -58,7 +75,18 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "MyDAW_artefacts/JuceLibraryCode/Release/Defs.txt"
+  "MyDAW_artefacts/Release/MyDAW.app/Contents/MacOS"
+  "MyDAW_artefacts/Release/MyDAW.app/Contents/Info.plist"
+  "MyDAW_artefacts/Release/MyDAW.app/Contents/Info.plist"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/juce-submodule/JUCEConfigVersion.cmake"
+  "_deps/juce-submodule/JUCEConfig.cmake"
+  "_deps/juce-submodule/JUCEExportConfig.cmake"
+  "_deps/juce-submodule/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/juce-submodule/modules/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/juce-submodule/extras/Build/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/juce-submodule/extras/Build/juceaide/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Source/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Source/Engine/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Source/Effects/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -70,4 +98,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/MyDAW.dir/DependInfo.cmake"
+  "Source/Effects/CMakeFiles/Effects.dir/DependInfo.cmake"
+  "tests/CMakeFiles/DelayFXTest.dir/DependInfo.cmake"
   )

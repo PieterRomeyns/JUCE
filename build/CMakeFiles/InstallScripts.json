@@ -2,6 +2,10 @@
 	"InstallScripts" : 
 	[
 		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce-submodule/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce-submodule/modules/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce-submodule/extras/Build/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce-submodule/extras/Build/juceaide/cmake_install.cmake",
 		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/cmake_install.cmake",
 		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Engine/cmake_install.cmake",
 		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/Source/Effects/cmake_install.cmake",

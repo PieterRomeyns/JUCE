@@ -1,45 +1,60 @@
 #include <JuceHeader.h>
 
-class MyDAWApplication : public juce::JUCEApplication {
+class MyDAWApplication final : public juce::JUCEApplication
+{
 public:
-    const juce::String getApplicationName() override { return "MyDAW"; }
-    const juce::String getApplicationVersion() override { return "1.0"; }
-    bool moreThanOneInstanceAllowed() override { return false; }
+    const juce::String getApplicationName() override       { return JUCE_APPLICATION_NAME_STRING; }
+    const juce::String getApplicationVersion() override    { return JUCE_APPLICATION_VERSION_STRING; }
+    bool moreThanOneInstanceAllowed() override             { return false; }
 
-    void initialise(const juce::String& commandLine) override {
-        // Create the main window and show it
-        mainWindow.reset(new MainWindow(getApplicationName()));
+    void initialise (const juce::String& commandLine) override
+    {
+        juce::ignoreUnused (commandLine);
+        mainWindow.reset (new MainWindow (getApplicationName()));
     }
 
-    void shutdown() override {
-        mainWindow = nullptr; // (deletes our window)
+    void shutdown() override
+    {
+        mainWindow = nullptr;
     }
 
-    void systemRequest(Quit) override {
+    void systemRequestedQuit() override
+    {
         quit();
     }
 
-private:
-    std::unique_ptr<juce::DocumentWindow> mainWindow;
-};
-
-class MainWindow : public juce::DocumentWindow {
-public:
-    MainWindow(juce::StringName title) 
-        : juce::DocumentWindow(title, juce::Colours::black, juce::DocumentWindow::allButtons)
+    void anotherInstanceStarted (const juce::String& commandLine) override
     {
-        setContentOwned(new juce::Label("Hello", "MyDAW Standalone App"), true);
-        setResizable(true, true);
-        centreWithSize(getWidth(), getHeight());
-        setVisible(true);
+        juce::ignoreUnused (commandLine);
     }
 
-    void closeButtonPressed() override {
-        JUCEApplication::getInstance()->systemRequest(Quit);
-    }
+    class MainWindow final : public juce::DocumentWindow
+    {
+    public:
+        explicit MainWindow (juce::String name)
+            : DocumentWindow (name,
+                              juce::Desktop::getInstance().getDefaultLookAndFeel()
+                                                          .findColour (juce::DocumentWindow::backgroundColourId),
+                              juce::DocumentWindow::allButtons)
+        {
+            setUsingNativeTitleBar (true);
+            setContentOwned (new juce::Label("content", "MyDAW Standalone App"), true);
+            setResizable (true, true);
+            centreWithSize (getWidth(), getHeight());
+            setVisible (true);
+        }
+
+        void closeButtonPressed() override
+        {
+            getInstance()->systemRequestedQuit();
+        }
+
+    private:
+        JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainWindow)
+    };
 
 private:
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainWindow)
+    std::unique_ptr<MainWindow> mainWindow;
 };
 
-AUTO_START_APPLICATION(MyDAWApplication)
+START_JUCE_APPLICATION (MyDAWApplication)

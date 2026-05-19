@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+940a122bfa3e505d08e2a9866b37d933 MyDAW_artefacts/JuceLibraryCode/JuceHeader.h
+0968cf0bdce8cd13685364d521d4135d MyDAW_artefacts/JuceLibraryCode/MyDAW/PkgInfo

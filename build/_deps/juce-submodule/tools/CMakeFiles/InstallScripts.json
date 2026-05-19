@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce-submodule/tools/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce-submodule/tools/modules/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce-submodule/tools/extras/Build/cmake_install.cmake",
+		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce-submodule/tools/extras/Build/juceaide/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

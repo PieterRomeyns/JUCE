@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/_deps/juce_frameworks-subbuild/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

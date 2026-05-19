@@ -22,6 +22,8 @@ events:
     candidate_directories:
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -40,6 +42,8 @@ events:
     searched_directories:
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/uname"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/uname"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
       - "/opt/homebrew/bin/uname"
       - "/opt/homebrew/sbin/uname"
       - "/usr/local/bin/uname"
@@ -49,6 +53,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -63,6 +69,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "message-v1"
@@ -94,6 +105,8 @@ events:
     candidate_directories:
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -112,6 +125,8 @@ events:
     searched_directories:
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/gmake"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/gmake"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
       - "/opt/homebrew/bin/gmake"
       - "/opt/homebrew/sbin/gmake"
       - "/usr/local/bin/gmake"
@@ -129,6 +144,8 @@ events:
       - "/Users/pieterromeyns/.lmstudio/bin/gmake"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/make"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/make"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/make"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/make"
       - "/opt/homebrew/bin/make"
       - "/opt/homebrew/sbin/make"
       - "/usr/local/bin/make"
@@ -138,6 +155,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -152,6 +171,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -181,6 +205,8 @@ events:
     candidate_directories:
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -199,6 +225,8 @@ events:
     searched_directories:
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/cc"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/cc"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/cc"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/cc"
       - "/opt/homebrew/bin/cc"
       - "/opt/homebrew/sbin/cc"
       - "/usr/local/bin/cc"
@@ -208,6 +236,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -222,6 +252,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -252,6 +287,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -266,6 +303,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "message-v1"
@@ -353,6 +395,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -372,6 +416,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -386,6 +432,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -410,6 +461,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -429,6 +482,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -443,6 +498,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -467,6 +527,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -486,6 +548,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -500,6 +564,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -524,6 +593,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -543,6 +614,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -557,6 +630,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -581,6 +659,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -600,6 +680,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -614,6 +696,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -638,6 +725,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -657,6 +746,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -671,6 +762,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -695,6 +791,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -713,6 +811,8 @@ events:
       - "/usr/bin/objcopy"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/objcopy"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/objcopy"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/objcopy"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/objcopy"
       - "/opt/homebrew/bin/objcopy"
       - "/opt/homebrew/sbin/objcopy"
       - "/usr/local/bin/objcopy"
@@ -732,6 +832,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -746,6 +848,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -770,6 +877,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -788,6 +897,8 @@ events:
       - "/usr/bin/readelf"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/readelf"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/readelf"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/readelf"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/readelf"
       - "/opt/homebrew/bin/readelf"
       - "/opt/homebrew/sbin/readelf"
       - "/usr/local/bin/readelf"
@@ -807,6 +918,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -821,6 +934,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -845,6 +963,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -863,6 +983,8 @@ events:
       - "/usr/bin/dlltool"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/dlltool"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/dlltool"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
       - "/opt/homebrew/bin/dlltool"
       - "/opt/homebrew/sbin/dlltool"
       - "/usr/local/bin/dlltool"
@@ -882,6 +1004,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -896,6 +1020,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -920,6 +1049,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -938,6 +1069,8 @@ events:
       - "/usr/bin/addr2line"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/addr2line"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/addr2line"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/addr2line"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/addr2line"
       - "/opt/homebrew/bin/addr2line"
       - "/opt/homebrew/sbin/addr2line"
       - "/usr/local/bin/addr2line"
@@ -957,6 +1090,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -971,6 +1106,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -995,6 +1135,8 @@ events:
       - "/usr/bin/"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1013,6 +1155,8 @@ events:
       - "/usr/bin/tapi"
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/tapi"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/tapi"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
       - "/opt/homebrew/bin/tapi"
       - "/opt/homebrew/sbin/tapi"
       - "/usr/local/bin/tapi"
@@ -1032,6 +1176,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1046,6 +1192,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -1079,6 +1230,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1093,6 +1246,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "find-v1"
@@ -1123,6 +1281,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1137,6 +1297,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
   -
     kind: "message-v1"
@@ -1223,6 +1388,8 @@ events:
     candidate_directories:
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1241,6 +1408,8 @@ events:
     searched_directories:
       - "/Users/pieterromeyns/.antigravity/antigravity/bin/install_name_tool"
       - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/install_name_tool"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/install_name_tool"
+      - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/install_name_tool"
       - "/opt/homebrew/bin/install_name_tool"
       - "/opt/homebrew/sbin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
@@ -1250,6 +1419,8 @@ events:
       ENV{PATH}:
         - "/Users/pieterromeyns/.antigravity/antigravity/bin"
         - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1264,6 +1435,11 @@ events:
         - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/pieterromeyns/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
+        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
+        - "/Users/pieterromeyns/.lmstudio/bin"
         - "/Users/pieterromeyns/.lmstudio/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
   -
@@ -1275,32 +1451,32 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t"
-      binary: "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t"
+      source: "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-nuqwUU"
+      binary: "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-nuqwUU"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: "arm64;x86_64"
+      CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
       CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t'
+        Change Dir: '/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-nuqwUU'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_248be/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_248be.dir/build.make CMakeFiles/cmTC_248be.dir/build
-        Building C object CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -arch arm64 -arch x86_64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b6de8/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b6de8.dir/build.make CMakeFiles/cmTC_b6de8.dir/build
+        Building C object CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Apple clang version 21.0.0 (clang-2100.1.1.101)
-        Target: x86_64-apple-darwin25.4.0
+        Target: arm64-apple-darwin25.4.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-edb708/CMakeCCompilerABI-arm64.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-nuqwUU -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-nuqwUU -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.4.0
         ignoring nonexistent directory "/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
@@ -1313,27 +1489,13 @@ events:
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-3a7877/CMakeCCompilerABI-x86_64.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
-        clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.4.0
-        ignoring nonexistent directory "/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
-         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
-         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
-        End of search list.
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo" -create -output CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-edb708/CMakeCCompilerABI-arm64.o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-3a7877/CMakeCCompilerABI-x86_64.o
-        Linking C executable cmTC_248be
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_248be.dir/link.txt --verbose=1
+        Linking C executable cmTC_b6de8
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6de8.dir/link.txt --verbose=1
         Apple clang version 21.0.0 (clang-2100.1.1.101)
-        Target: x86_64-apple-darwin25.4.0
+        Target: arm64-apple-darwin25.4.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-9508d4/CMakeCCompilerABI-arm64.out -L/usr/local/lib -v CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -arch_multiple -final_output cmTC_248be -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_b6de8 -L/usr/local/lib -v CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1267
         BUILD 18:30:29 Apr 22 2026
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -1345,20 +1507,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch x86_64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-42de99/CMakeCCompilerABI-x86_64.out -L/usr/local/lib -v CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -arch_multiple -final_output cmTC_248be -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld PROJECT:ld-1267
-        BUILD 18:30:29 Apr 22 2026
-        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
-        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
-        LTO support using: LLVM version 21.0.0 (static support for 30, runtime is 30)
-        TAPI support using: Apple TAPI version 21.0.0 (tapi-2100.0.2.6)
-        Library search paths:
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
-        Framework search paths:
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo" -create -output cmTC_248be /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-9508d4/CMakeCCompilerABI-arm64.out /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-42de99/CMakeCCompilerABI-x86_64.out
-        /usr/bin/cc  -arch arm64 -arch x86_64  -v -Wl,-v CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -o cmTC_248be
+        /usr/bin/cc  -arch arm64  -v -Wl,-v CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -o cmTC_b6de8
         
       exitCode: 0
   -
@@ -1368,8 +1517,8 @@ events:
       - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Effective list of requested architectures (possibly empty)  : "arm64;x86_64"
-      Effective list of architectures found in the ABI info binary: "arm64;x86_64"
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
   -
     kind: "message-v1"
     backtrace:
@@ -1400,18 +1549,18 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t']
+        ignore line: [Change Dir: '/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-nuqwUU']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_248be/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_248be.dir/build.make CMakeFiles/cmTC_248be.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -arch arm64 -arch x86_64   -v -Wl -v -MD -MT CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b6de8/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b6de8.dir/build.make CMakeFiles/cmTC_b6de8.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
-        ignore line: [Target: x86_64-apple-darwin25.4.0]
+        ignore line: [Target: arm64-apple-darwin25.4.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-edb708/CMakeCCompilerABI-arm64.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-nuqwUU -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-nuqwUU -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.4.0]
         ignore line: [ignoring nonexistent directory "/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
@@ -1424,27 +1573,13 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-xXhB6t -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-3a7877/CMakeCCompilerABI-x86_64.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
-        ignore line: [clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.4.0]
-        ignore line: [ignoring nonexistent directory "/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
-        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
-        ignore line: [End of search list.]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo" -create -output CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-edb708/CMakeCCompilerABI-arm64.o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-3a7877/CMakeCCompilerABI-x86_64.o]
-        ignore line: [Linking C executable cmTC_248be]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_248be.dir/link.txt --verbose=1]
+        ignore line: [Linking C executable cmTC_b6de8]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6de8.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
-        ignore line: [Target: x86_64-apple-darwin25.4.0]
+        ignore line: [Target: arm64-apple-darwin25.4.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-9508d4/CMakeCCompilerABI-arm64.out -L/usr/local/lib -v CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o -arch_multiple -final_output cmTC_248be -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_b6de8 -L/usr/local/lib -v CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1461,13 +1596,10 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [/var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCCompilerABI-9508d4/CMakeCCompilerABI-arm64.out] ==> ignore
+          arg [cmTC_b6de8] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_248be.dir/CMakeCCompilerABI.c.o] ==> ignore
-          arg [-arch_multiple] ==> ignore
-          arg [-final_output] ==> ignore
-          arg [cmTC_248be] ==> ignore
+          arg [CMakeFiles/cmTC_b6de8.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
         linker tool for 'C': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
@@ -1509,35 +1641,34 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi"
-      binary: "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi"
+      source: "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-AbKxVr"
+      binary: "/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-AbKxVr"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: "arm64;x86_64"
+      CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
       CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi'
+        Change Dir: '/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-AbKxVr'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_95a92/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_95a92.dir/build.make CMakeFiles/cmTC_95a92.dir/build
-        Building CXX object CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -arch arm64 -arch x86_64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d5816/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d5816.dir/build.make CMakeFiles/cmTC_d5816.dir/build
+        Building CXX object CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 21.0.0 (clang-2100.1.1.101)
-        Target: x86_64-apple-darwin25.4.0
+        Target: arm64-apple-darwin25.4.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
-        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-fd4bd0/CMakeCXXCompilerABI-arm64.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-AbKxVr -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-AbKxVr -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.4.0
         ignoring nonexistent directory "/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
@@ -1551,28 +1682,13 @@ events:
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-786f73/CMakeCXXCompilerABI-x86_64.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-        clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.4.0
-        ignoring nonexistent directory "/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1
-         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
-         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
-         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
-        End of search list.
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo" -create -output CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-fd4bd0/CMakeCXXCompilerABI-arm64.o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-786f73/CMakeCXXCompilerABI-x86_64.o
-        Linking CXX executable cmTC_95a92
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95a92.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_d5816
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5816.dir/link.txt --verbose=1
         Apple clang version 21.0.0 (clang-2100.1.1.101)
-        Target: x86_64-apple-darwin25.4.0
+        Target: arm64-apple-darwin25.4.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-dfaa0f/CMakeCXXCompilerABI-arm64.out -L/usr/local/lib -v CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -arch_multiple -final_output cmTC_95a92 -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_d5816 -L/usr/local/lib -v CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1267
         BUILD 18:30:29 Apr 22 2026
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -1584,20 +1700,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch x86_64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-df45a4/CMakeCXXCompilerABI-x86_64.out -L/usr/local/lib -v CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -arch_multiple -final_output cmTC_95a92 -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld PROJECT:ld-1267
-        BUILD 18:30:29 Apr 22 2026
-        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
-        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
-        LTO support using: LLVM version 21.0.0 (static support for 30, runtime is 30)
-        TAPI support using: Apple TAPI version 21.0.0 (tapi-2100.0.2.6)
-        Library search paths:
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
-        Framework search paths:
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo" -create -output cmTC_95a92 /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-dfaa0f/CMakeCXXCompilerABI-arm64.out /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-df45a4/CMakeCXXCompilerABI-x86_64.out
-        /usr/bin/c++  -arch arm64 -arch x86_64  -v -Wl,-v CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_95a92
+        /usr/bin/c++  -arch arm64  -v -Wl,-v CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d5816
         
       exitCode: 0
   -
@@ -1607,8 +1710,8 @@ events:
       - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Effective list of requested architectures (possibly empty)  : "arm64;x86_64"
-      Effective list of architectures found in the ABI info binary: "arm64;x86_64"
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
   -
     kind: "message-v1"
     backtrace:
@@ -1641,20 +1744,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi']
+        ignore line: [Change Dir: '/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-AbKxVr']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_95a92/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_95a92.dir/build.make CMakeFiles/cmTC_95a92.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -arch arm64 -arch x86_64   -v -Wl -v -MD -MT CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d5816/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d5816.dir/build.make CMakeFiles/cmTC_d5816.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
-        ignore line: [Target: x86_64-apple-darwin25.4.0]
+        ignore line: [Target: arm64-apple-darwin25.4.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
-        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-fd4bd0/CMakeCXXCompilerABI-arm64.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-AbKxVr -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-AbKxVr -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.4.0]
         ignore line: [ignoring nonexistent directory "/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
@@ -1668,28 +1770,13 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/pieterromeyns/Projects/testprojects/vst-amp-plugin/build/CMakeFiles/CMakeScratch/TryCompile-v98sTi -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-786f73/CMakeCXXCompilerABI-x86_64.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.4.0]
-        ignore line: [ignoring nonexistent directory "/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1]
-        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
-        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
-        ignore line: [End of search list.]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo" -create -output CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-fd4bd0/CMakeCXXCompilerABI-arm64.o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-786f73/CMakeCXXCompilerABI-x86_64.o]
-        ignore line: [Linking CXX executable cmTC_95a92]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95a92.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_d5816]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5816.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
-        ignore line: [Target: x86_64-apple-darwin25.4.0]
+        ignore line: [Target: arm64-apple-darwin25.4.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o /var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-dfaa0f/CMakeCXXCompilerABI-arm64.out -L/usr/local/lib -v CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o -arch_multiple -final_output cmTC_95a92 -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_d5816 -L/usr/local/lib -v CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1706,13 +1793,10 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [/var/folders/9c/g0lck8k53jndcxbyzg77sfc00000gn/T/CMakeCXXCompilerABI-dfaa0f/CMakeCXXCompilerABI-arm64.out] ==> ignore
+          arg [cmTC_d5816] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_95a92.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-          arg [-arch_multiple] ==> ignore
-          arg [-final_output] ==> ignore
-          arg [cmTC_95a92] ==> ignore
+          arg [CMakeFiles/cmTC_d5816.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
@@ -1746,128 +1830,4 @@ events:
       will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
       LTO support using: LLVM version 21.0.0 (static support for 30, runtime is 30)
       TAPI support using: Apple TAPI version 21.0.0 (tapi-2100.0.2.6)
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/opt/homebrew/share/cmake/Modules/FindGit.cmake:111 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:1887 (find_package)"
-      - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:1622 (__FetchContent_populateSubbuild)"
-      - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:2158:EVAL:2 (__FetchContent_doPopulation)"
-      - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:2158 (cmake_language)"
-      - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:2399 (__FetchContent_Populate)"
-      - "CMakeLists.txt:18 (FetchContent_MakeAvailable)"
-    mode: "program"
-    variable: "GIT_EXECUTABLE"
-    description: "Git command line client"
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "git"
-    candidate_directories:
-      - "/Users/pieterromeyns/.antigravity/antigravity/bin/"
-      - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/"
-      - "/opt/homebrew/bin/"
-      - "/opt/homebrew/sbin/"
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/opt/pkg/env/active/bin/"
-      - "/opt/pmk/env/global/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Users/pieterromeyns/.lmstudio/bin/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
-      - "/opt/homebrew/bin/"
-      - "/opt/homebrew/sbin/"
-      - "/opt/homebrew/"
-      - "/usr/local/bin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/"
-      - "/usr/bin/"
-      - "/usr/sbin/"
-      - "/usr/"
-      - "/bin/"
-      - "/sbin/"
-      - "/usr/X11R6/bin/"
-      - "/usr/X11R6/sbin/"
-      - "/usr/X11R6/"
-      - "/usr/pkg/bin/"
-      - "/usr/pkg/sbin/"
-      - "/usr/pkg/"
-      - "/opt/bin/"
-      - "/opt/sbin/"
-      - "/opt/"
-      - "/sw/bin/"
-      - "/sw/sbin/"
-      - "/sw/"
-      - "/opt/local/bin/"
-      - "/opt/local/sbin/"
-      - "/opt/local/"
-      - "/Users/pieterromeyns/Applications/"
-      - "/Applications/"
-      - "/Applications/Xcode.app/Contents/Applications/"
-      - "/Applications/Xcode.app/Contents/Developer/Applications/"
-    searched_directories:
-      - "/Users/pieterromeyns/.antigravity/antigravity/bin/git"
-      - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin/git"
-      - "/opt/homebrew/bin/git"
-      - "/opt/homebrew/sbin/git"
-      - "/usr/local/bin/git"
-      - "/System/Cryptexes/App/usr/bin/git"
-    found: "/usr/bin/git"
-    search_context:
-      ENV{PATH}:
-        - "/Users/pieterromeyns/.antigravity/antigravity/bin"
-        - "/Users/pieterromeyns/.nvm/versions/node/v18.20.8/bin"
-        - "/opt/homebrew/bin"
-        - "/opt/homebrew/sbin"
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/opt/pkg/env/active/bin"
-        - "/opt/pmk/env/global/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Users/pieterromeyns/.lmstudio/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
-        - "/opt/homebrew"
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/opt/homebrew"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-        - "/sw"
-        - "/opt/local"
-      CMAKE_SYSTEM_APPBUNDLE_PATH:
-        - "/Users/pieterromeyns/Applications"
-        - "/Applications"
-        - "/Applications/Xcode.app/Contents/Applications"
-        - "/Applications/Xcode.app/Contents/Developer/Applications"
 ...
